@@ -1,0 +1,156 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+q, blockquote {
+    font-style: italic;
+}
+
+#header {
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    margin: 0 100px;
+}
+
+.logo {
+    margin-top: 30px;
+    width: 100px;
+}
+
+.header-text {
+    margin-top: 100px;
+    max-width: 350px;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 18px;
+    color: #777;
+}
+
+.rect {
+    width: 12px;
+    height: 12px;
+    background-color: deeppink;
+    display: inline-block;
+    margin: 20px 0px;
+}
+
+.common-btn {
+    padding: 18px 40px;
+    background: transparent;
+    font-weight: bold;
+    outline: none;
+    border: 2px solid deeppink;
+    cursor: pointer;
+}
+
+.header-text button {
+    margin-top: 20px;
+}
+
+.line-1 {
+    width: 8px;
+    height: 8px;
+    background-color: deeppink;
+    display: inline-block;
+}
+
+.line-2 {
+    width: 80px;
+    height: 1px;
+    background-color: deeppink;
+    display: inline-block;
+}
+
+.line-3 {
+    width: 60px;
+    height: 1px;
+    background-color: deeppink;
+    display: inline-block;
+}
+
+.line {
+    margin-top: 20px;
+    line-height: 8px;
+}
+
+#side-nav {
+    width: 250px;
+    height: 100vh;
+    background: deeppink;
+    position: fixed;
+    right: -250px;
+    transition: .5s;
+    top: 0px;
+    z-index: 2;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 20px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-btn {
+    position: fixed;
+    width: 50px;
+    top: 30px;
+    right: 50px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    padding: 100px 0;
+}
+
+.about-left-col {
+    flex-basis: 50%;
+}
+
+.about-left-col img {
+    width: 100%;
+}
+
+.about-right-col {
+    flex-basis: 50%;
+    align-content: right;
+}
+
+.about-text {
+    margin-left: auto;
+    text-align: right;
+    max-width: 350px;
+    margin-right: 100px;
+}
+
+.about-text blockquote {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    color: #555;
+    font-size: 20px;
+}
+
+.quote-author {
+    color: #777;
+    margin-top: 4px;
+}

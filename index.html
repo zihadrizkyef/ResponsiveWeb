@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Web</title>
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="images/logo.png" class="logo"/>
+            <div class="header-text">
+                <h1>Accumsan fringilla facilisis in</h1>
+                <span class="rect"></span>
+                <p>Mauris tristique malesuada neque ac egestas. Aenean leo dolor, blandit non massa sed, ultrices iaculis diam. Aliquam erat volutpat. Ut non dolor vitae lorem luctus dictum.</p>
+                <button class="common-btn">Read More</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav id="side-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Offer</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="nav-btn"/>
+
+    <section id="about">
+        <div class="about-left-col">
+            <img src="images/about.png">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <span class="rect"></span>
+                <p>Suspendisse potenti. Cras ornare leo mi, non porta arcu lacinia eu. Cras id leo libero. Nulla lacus neque, accumsan fringilla facilisis in, mattis eleifend metus. Phasellus congue porttitor risus sed mattis. Aenean ultricies sit amet nibh in condimentum. Pellentesque dictum dolor in sollicitudin pretium.</p>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+                <br>
+                <blockquote>Vestibulum sit amet pretium ex. Aliquam pulvinar eleifend eleifend.</blockquote>
+                <p class="quote-author">by Robert Jams Bon</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var navBtn = document.getElementById("nav-btn");
+        var sideNav = document.getElementById("side-nav");
+    
+        sideNav.style.right = "-250px";
+        navBtn.onclick = function() {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0px";
+            } else {
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
+
+</body>
+</html>
